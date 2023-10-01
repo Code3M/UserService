@@ -17,11 +17,11 @@ import java.util.List;
 public class UserEntity {
 
     @Id
+    @Column(nullable = false,name = "user_ID")
+    private String userID;
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false,name = "user_regNo")
     private long regNo;
-    @Column(nullable = false,name = "user_ID")
-    private String userID;
     @Column(nullable = false,name = "password")
     private String password;
     @Column(nullable = false,name = "user_fullName")
