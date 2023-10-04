@@ -67,16 +67,12 @@ public class UserServices {
                 switch (key) {
                     case "userEmail":
                         existingUser.setUserName((String) value);
-                        //ApiResponse<UserEntity> response=new ApiResponse<>("Success","User Name Updated");
                         break;
                     case "email":
                         existingUser.setUserEmail((String) value);
-//                        ApiResponse<UserEntity> response2=new ApiResponse<>("Success","User Email Updated");
-//                        ResponseEntity.ok().body(response2);
                         break;
                     case "userMobile":
                         existingUser.setUserMobile((long) value);
-                        //ApiResponse<UserEntity> response3=new ApiResponse<>("Success","User Mobile Updated");
                         break;
                 }
             });

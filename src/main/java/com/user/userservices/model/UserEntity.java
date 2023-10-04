@@ -4,9 +4,6 @@ package com.user.userservices.model;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.security.crypto.password.PasswordEncoder;
-
-import java.util.List;
-
 @Getter
 @Setter
 @NoArgsConstructor
@@ -35,6 +32,4 @@ public class UserEntity {
     @Column(nullable = false,name="user_gender")
     private String gender;
 
-    @Transient
-    private List<Rating> rating;
 }
